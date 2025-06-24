@@ -1,0 +1,8 @@
+WMLang
+======
+
+An interpreted programming language written in Rust.
+
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute this software,
+provided that you retain the original copyright notice.
