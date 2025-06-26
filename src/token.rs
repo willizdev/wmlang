@@ -2,9 +2,11 @@
 pub enum TokenType {
     Eof,
     Illegal,
+
     // identifiers and literals
     Ident,
     Int,
+
     // operators
     Assign,
     Plus,
@@ -16,6 +18,7 @@ pub enum TokenType {
     GThan,
     Equal,
     NotEqual,
+
     // delimeters
     Comma,
     Semicolon,
@@ -23,6 +26,7 @@ pub enum TokenType {
     RParen,
     LBrace,
     RBrace,
+
     // keywords
     Let,
     Function,
@@ -43,6 +47,7 @@ static KEYWORDS: &[(&str, TokenType)] = &[
     ("return", TokenType::Return),
 ];
 
+#[derive(Debug, Clone)]
 pub struct Token {
     pub ttype: TokenType,
     pub literal: String,
